@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Martial Insight - BJJ/Muay Thai/MMA Journal</string>
+    <string name="title_home">TEST</string>
+    <string name="title_dashboard">Start Roll</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="timer_start_button">Start</string>
+
+    <string name="title_roundEntry">Round Information Entry</string>
+</resources>
