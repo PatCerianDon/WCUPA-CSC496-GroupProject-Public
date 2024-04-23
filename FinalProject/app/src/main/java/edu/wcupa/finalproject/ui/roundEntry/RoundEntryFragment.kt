@@ -1,4 +1,4 @@
-package edu.wcupa.csc496.finalproject.ui.roundEntry
+package edu.wcupa.finalproject.ui.roundEntry
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,8 +10,8 @@ import android.widget.SeekBar
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.google.android.material.switchmaterial.SwitchMaterial
-import edu.wcupa.csc496.finalproject.databinding.FragmentRoundEntryBinding
-import edu.wcupa.csc496.finalproject.R
+import edu.wcupa.finalproject.databinding.FragmentRoundEntryBinding
+import edu.wcupa.finalproject.R
 
 class RoundEntryFragment : Fragment() {
 

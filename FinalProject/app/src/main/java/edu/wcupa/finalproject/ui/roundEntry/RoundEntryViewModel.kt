@@ -1,4 +1,4 @@
-package edu.wcupa.csc496.finalproject.ui.roundEntry
+package edu.wcupa.finalproject.ui.roundEntry
 
 import androidx.lifecycle.ViewModel
 

@@ -1,4 +1,4 @@
-package edu.wcupa.csc496.finalproject.ui.calender
+package edu.wcupa.finalproject.ui.calender
 
 import androidx.lifecycle.ViewModel
 

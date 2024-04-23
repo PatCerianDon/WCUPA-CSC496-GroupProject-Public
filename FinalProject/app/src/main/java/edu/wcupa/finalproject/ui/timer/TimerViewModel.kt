@@ -1,4 +1,4 @@
-package edu.wcupa.csc496.finalproject.ui.timer
+package edu.wcupa.finalproject.ui.timer
 
 import androidx.lifecycle.ViewModel
 

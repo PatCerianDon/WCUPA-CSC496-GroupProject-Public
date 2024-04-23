@@ -1,15 +1,20 @@
-package edu.wcupa.csc496.finalproject
+package edu.wcupa.finalproject
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import edu.wcupa.csc496.finalproject.databinding.ActivityMainBinding
+import com.google.firebase.auth.FirebaseAuth
+import edu.wcupa.finalproject.databinding.ActivityMainBinding
+import edu.wcupa.finalproject.login.SignInActivity
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private val firebaseAuth = FirebaseAuth.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,12 +23,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val navView: BottomNavigationView = binding.navView
-
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         navView.setupWithNavController(navController)
 
+        if (firebaseAuth.currentUser == null) {
+            val intent = Intent(this, SignInActivity::class.java)
+            startActivity(intent)
+        }
 
-        // Add an OnItemSelectedListener to the BottomNavigationView
+        val currentUser = firebaseAuth.currentUser
+        val welcomeMessage = "Welcome, ${currentUser?.email}"
+        Toast.makeText(this, welcomeMessage, Toast.LENGTH_SHORT).show()
+
+        binding.logOutButton.setOnClickListener {
+            firebaseAuth.signOut()
+            val intent = Intent(this, SignInActivity::class.java)
+            startActivity(intent)
+        }
+
         navView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_home -> {

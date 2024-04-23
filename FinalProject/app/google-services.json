@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "870146784386",
+    "project_id": "csc496-final-project-1eed0",
+    "storage_bucket": "csc496-final-project-1eed0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870146784386:android:70e73d0763e7e8fba8889b",
+        "android_client_info": {
+          "package_name": "edu.wcupa.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870146784386-u0p72un9mj5jslkodmlvrcdgo9vveasd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.wcupa.finalproject",
+            "certificate_hash": "9fbabc740abd065f099463efd60094b90badff0a"
+          }
+        },
+        {
+          "client_id": "870146784386-bu7p0tu3aj3gtvtrm5am7rgs75ha5upd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_52FZY0ZTgzwYYRBEMohOs5eKOyHx0ok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870146784386-bu7p0tu3aj3gtvtrm5am7rgs75ha5upd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

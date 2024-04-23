@@ -1,4 +1,4 @@
-package edu.wcupa.csc496.finalproject.ui.timer
+package edu.wcupa.finalproject.ui.timer
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -9,8 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import edu.wcupa.csc496.finalproject.R
-import edu.wcupa.csc496.finalproject.databinding.FragmentTimerBinding
+import edu.wcupa.finalproject.R
+import edu.wcupa.finalproject.databinding.FragmentTimerBinding
 
 class TimerFragment : Fragment() {
 
