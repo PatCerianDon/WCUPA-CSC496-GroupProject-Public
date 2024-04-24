@@ -94,4 +94,6 @@ dependencies {
     // FirebaseUI for Cloud Storage
     implementation ("com.firebaseui:firebase-ui-storage:8.0.2")
 
+    implementation ("com.github.shobhitpuri:custom-google-signin-button:2.0.0")
+
 }
