@@ -27,7 +27,7 @@
         android:id="@+id/navigation_calendar"
         android:name="edu.wcupa.finalproject.ui.calender.CalenderFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_calender" />
 
     <fragment
         android:id="@+id/navigation_roundEntry"

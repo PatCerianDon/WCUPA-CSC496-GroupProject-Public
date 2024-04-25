@@ -2,6 +2,7 @@ package edu.wcupa.finalproject
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -41,10 +42,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
         }
-
+        // Refrence logOutButton in order to set visibility on certain screens/fragments //
+        val logOutButton = binding.logOutButton
         navView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_home -> {
+                    logOutButton.visibility = View.VISIBLE
                     // Clear the back stack and navigate to the home fragment
                     navController.apply {
                         popBackStack(R.id.navigation_home, false)
@@ -52,6 +55,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 R.id.navigation_timer -> {
+                    logOutButton.visibility = View.GONE
                     // Clear the back stack and navigate to the dashboard fragment
                     navController.apply {
                         popBackStack(R.id.navigation_timer, false)
