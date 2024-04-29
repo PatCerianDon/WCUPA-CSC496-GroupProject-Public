@@ -1,12 +1,8 @@
-package edu.wcupa.finalproject.login
+package edu.wcupa.finalproject.database.login.unused
 
-import android.content.Intent
-import android.os.Bundle
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.auth.FirebaseAuth
-import edu.wcupa.finalproject.databinding.ActivitySignUpBinding
+//TODO: This file is not used in the project. Do not include it in the final submission.
 
+/*
 class SignUpActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignUpBinding
@@ -51,3 +47,4 @@ class SignUpActivity : AppCompatActivity() {
         }
     }
 }
+*/

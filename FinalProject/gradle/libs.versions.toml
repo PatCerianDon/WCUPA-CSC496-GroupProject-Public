@@ -1,5 +1,6 @@
 [versions]
 agp = "8.3.2"
+comGoogleDevtoolsKspGradlePlugin = "1.9.23-1.0.20"
 kotlin = "1.9.0"
 coreKtx = "1.13.0"
 junit = "4.13.2"
@@ -25,9 +26,12 @@ uiToolingPreviewAndroid = "1.6.6"
 lifecycleRuntimeCompose = "2.7.0"
 navigationCompose = "2.7.7"
 activity = "1.8.0"
+room = "2.6.1"
+kspPlugin = "1.9.0-1.0.12"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+com-google-devtools-ksp-gradle-plugin = { module = "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin", version.ref = "comGoogleDevtoolsKspGradlePlugin" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -51,8 +55,16 @@ androidx-ui-tooling-preview-android = { group = "androidx.compose.ui", name = "u
 androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleRuntimeCompose" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+roomRuntime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+roomKtx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+roomTesting = { group = "androidx.room", name = "room-testing", version.ref = "room" }
+ksp = { group = "com.google.devtools.ksp", name = "ksps", version.ref = "comGoogleDevtoolsKspGradlePlugin" }
+
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref="kspPlugin" }
 

@@ -34,4 +34,12 @@
         android:name="edu.wcupa.finalproject.ui.roundEntry.RoundEntryFragment"
         android:label="@string/title_roundEntry"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="edu.wcupa.finalproject.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+
+
 </navigation>

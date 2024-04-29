@@ -1,29 +1,13 @@
-package edu.wcupa.finalproject.login
+package edu.wcupa.finalproject.database.login.unused
 
-import android.content.Intent
-import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.TextView
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.common.SignInButton
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.auth.GoogleAuthProvider
-import edu.wcupa.finalproject.MainActivity
-import edu.wcupa.finalproject.R
-import edu.wcupa.finalproject.databinding.ActivitySignInBinding
+//TODO!: This file is not used in the project. Do not include it in the final submission.
 
-class SignInActivity : AppCompatActivity() {
+/*class SignInActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignInBinding
     private lateinit var firebaseAuth: FirebaseAuth
 
     protected fun setGooglePlusButtonText(signInButton: SignInButton, buttonText: String?) {
-        // Find the TextView that is inside of the SignInButton and set its text
         for (i in 0 until signInButton.childCount) {
             val v: View = signInButton.getChildAt(i)
             if (v is TextView) {
@@ -116,3 +100,4 @@ class SignInActivity : AppCompatActivity() {
         }
     }
 }
+*/
