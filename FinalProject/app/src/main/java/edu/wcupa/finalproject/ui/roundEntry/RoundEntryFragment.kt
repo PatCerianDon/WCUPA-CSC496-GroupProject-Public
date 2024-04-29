@@ -1,5 +1,6 @@
 package edu.wcupa.finalproject.ui.roundEntry
 
+import edu.wcupa.finalproject.ui.roundEntry.view.ButtonFieldButtonView
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -29,9 +30,14 @@ class RoundEntryFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         setupSeekBar(binding.seekBar1)
         setupSeekBar(binding.seekBar2)
+
+        view.findViewById<ButtonFieldButtonView>(R.id.wrestling_container_field1)
+        view.findViewById<ButtonFieldButtonView>(R.id.wrestling_container_field2)
+
+        setupButtonField(view, R.id.wrestling_container_field1, 20, getString(R.string.takedown_successful))
+        setupButtonField(view, R.id.wrestling_container_field2, 20, getString(R.string.takedown_failed))
     }
 
     private fun setupSeekBar(seekBar: SeekBar) {
@@ -68,17 +74,23 @@ class RoundEntryFragment : Fragment() {
             }
         })
         val switch: SwitchMaterial? = view?.findViewById(R.id.switch1)
-        val elementsContainer: LinearLayout? = view?.findViewById(R.id.elements_container)
+        val wrestlingContainer: LinearLayout? = view?.findViewById(R.id.wrestling_container)
 
         switch?.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 // The switch is in the "on" state, so make the layout visible
-                elementsContainer?.visibility = View.VISIBLE
+                wrestlingContainer?.visibility = View.VISIBLE
             } else {
                 // The switch is in the "off" state, so hide the layout
-                elementsContainer?.visibility = View.GONE
+                wrestlingContainer?.visibility = View.GONE
             }
         }
+    }
+
+    fun setupButtonField(view: View, id: Int, number: Int, text: String) {
+        val buttonField = view.findViewById<ButtonFieldButtonView>(id)
+        buttonField.setNumber(number)
+        buttonField.setText(text)
     }
 
     override fun onDestroyView() {

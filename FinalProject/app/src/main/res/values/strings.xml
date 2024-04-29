@@ -19,4 +19,16 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="default_web_client_id" />
+
+
+
+    <!-- Wrestling Container String -->
+    <string name="takedown_successful">How many successful takedowns?</string>
+    <string name="takedown_failed">How many failed takedowns?</string>
+
+
+
+
+
+
 </resources>
